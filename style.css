@@ -7,7 +7,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 /*****************
@@ -149,10 +148,19 @@ button:hover {
   button {
     width: 13rem;
     margin-top: 1.5rem;
-    padding: 0.8rem;
-    background-color: white;
-    border-radius: 30px;
-    color: var(--violet);
-    box-shadow: 1px 2px 3px 3px hsl(257, 40%, 45%);
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    border-radius: 40px;
+    float: left;
+  }
+  .fa {
+    margin-top: 0;
+    float: right;
+  }
+
+  .fa-brands {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
   }
 }
