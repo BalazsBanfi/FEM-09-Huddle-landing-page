@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid red;
 }
 
 /*****************
@@ -14,12 +15,12 @@
 ******************/
 
 body {
-  width: clamp(375px, 100vw, 1440px);
+  width: clamp(375px, 96vw, 1440px);
   padding: 2.25rem;
   background: url("./images/bg-mobile.svg") no-repeat, var(--violet);
+  background-size: contain;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
 }
 
 header {
@@ -40,7 +41,8 @@ main {
 ***Image section***
 ******************/
 .img {
-  max-width: 100vw;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .img > img {
@@ -75,7 +77,7 @@ button {
   background-color: white;
   border-radius: 30px;
   color: var(--violet);
-  box-shadow: 2px 4px 5px 5px hsl(257, 40%, 39%);
+  box-shadow: 1px 2px 3px 3px hsl(257, 40%, 45%);
 }
 
 button:hover {
@@ -107,4 +109,50 @@ button:hover {
   color: var(--softMagenta);
   border: 1px solid var(--softMagenta);
   cursor: pointer;
+}
+
+/************************
+***Media query section***
+************************/
+
+@media screen and (min-width: 1125px) {
+  body {
+    background: url("./images/bg-desktop.svg") no-repeat, var(--violet);
+    padding: 3.5rem 3.5rem 3.5rem 4.5rem;
+  }
+  header img {
+    height: 55px;
+  }
+  main {
+    flex-direction: row;
+    padding-top: 1.5rem;
+  }
+  .img {
+    flex-basis: 57%;
+    max-width: 50vw;
+  }
+  .textSection {
+    padding-left: 2.5rem;
+    flex-basis: 43%;
+  }
+  .textSection h1 {
+    font-size: 2.3rem;
+    text-align: left;
+  }
+
+  .textSection p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  button {
+    width: 13rem;
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 30px;
+    color: var(--violet);
+    box-shadow: 1px 2px 3px 3px hsl(257, 40%, 45%);
+  }
 }
