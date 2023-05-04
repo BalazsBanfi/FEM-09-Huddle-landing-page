@@ -77,6 +77,7 @@ button {
   border-radius: 30px;
   color: var(--violet);
   box-shadow: 1px 2px 3px 3px hsl(257, 40%, 45%);
+  transition-duration: 0.3s;
 }
 
 button:hover {
@@ -102,6 +103,7 @@ button:hover {
   padding: 9px;
   border: 1px solid white;
   border-radius: 50%;
+  transition-duration: 0.3s;
 }
 
 .fa-brands:hover {
